@@ -21,3 +21,6 @@ $ yarn generate
 
 - invite backend users
   https://app.netlify.com/sites/anna-homepage/identity
+
+- set up netlify cms
+  https://www.netlifycms.org/docs/nuxt/
