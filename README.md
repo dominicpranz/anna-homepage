@@ -17,4 +17,7 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Useful links
+
+- invite backend users
+  https://app.netlify.com/sites/anna-homepage/identity

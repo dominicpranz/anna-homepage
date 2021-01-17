@@ -41,5 +41,7 @@ export default {
 
   tailwindcss: {
     // Options https://tailwindcss.nuxtjs.org/options/
+    cssPath: "~/assets/styles/tailwind.scss",
+    configPath: "~/tailwind.config.js"
   }
 };
