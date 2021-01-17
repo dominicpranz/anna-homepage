@@ -2,11 +2,35 @@
 	<div>
 		<section>contact info</section>
 		<section>CV</section>
+		<li v-for="post of posts" :key="post.slug">
+			<NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
+		</li>
+		----------
+		<h2>{{ post.title }}</h2>
+		<nuxt-content :document="post" />
 	</div>
 </template>
 
 <script>
-console.log(123);
+export default {
+	async asyncData({ $content, params, error }) {
+		const posts = await $content("blog").fetch();
+		let post;
+		try {
+			post = await $content("blog", params.slug).fetch();
+			// OR const article = await $content(`articles/${params.slug}`).fetch()
+			post = post[0];
+			console.log(post);
+		} catch (e) {
+			error({ message: "Blog Post not found" });
+		}
+
+		return {
+			post,
+			posts,
+		};
+	},
+};
 </script>
 
 <style lang="scss">
