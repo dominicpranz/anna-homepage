@@ -19,8 +19,11 @@ $ yarn generate
 
 ## Useful links
 
+- set up netlify cms
+  https://www.netlifycms.org/docs/nuxt/
+
 - invite backend users
   https://app.netlify.com/sites/anna-homepage/identity
 
-- set up netlify cms
-  https://www.netlifycms.org/docs/nuxt/
+- deploy page
+  https://app.netlify.com/sites/anna-homepage/deploys
