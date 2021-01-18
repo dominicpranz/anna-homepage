@@ -2,6 +2,10 @@
 	<div>
 		<section>contact info</section>
 		<section>CV</section>
+		<h3>
+			here we want download button with the cv pdf which we can toggle on or off
+			in the backend
+		</h3>
 		<li v-for="post of posts" :key="post.slug">
 			<NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
 		</li>
