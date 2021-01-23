@@ -4,6 +4,9 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttr: {
+      lang: "en"
+    },
     title: "anna-homepage",
     meta: [
       { charset: "utf-8" },
@@ -40,6 +43,7 @@ export default {
   build: {},
 
   generate: {
+    fallback: true // use generated 404.html instead of 404 page from the hosting site
     /*routes: function() {
       const fs = require("fs");
       const path = require("path");

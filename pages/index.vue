@@ -1,6 +1,8 @@
 <template>
-	<div class="container">
-		<section>hero-section</section>
+	<div
+		class="container text-blue-700 dark:text-indigo-300 bg-indigo-300 dark:bg-indigo-900"
+	>
+		<section class="">hero-section</section>
 		<section>Intro-text (+ image / graphic?)</section>
 		<section>instagram-section</section>
 	</div>
@@ -22,4 +24,15 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+section {
+	color: blue;
+
+	@media (prefers-color-scheme: dark) {
+		color: green;
+	}
+
+	@media (prefers-color-scheme: light) {
+		color: red;
+	}
+}
 </style>
